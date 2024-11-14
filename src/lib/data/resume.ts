@@ -1,3 +1,5 @@
-export const data = '';
+import Assets from "./assets";
 
-export const title = 'Resumé';
+export const data = Assets.Resume;
+
+export const title = 'Resume';

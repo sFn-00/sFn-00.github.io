@@ -3,6 +3,7 @@ import { theme } from '$lib/stores/theme';
 import { base } from '$app/paths';
 
 const gh = (file: string) => `${base}/logos/${file}`;
+const r = (file: string) => `${base}/resume/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
@@ -31,6 +32,8 @@ const Assets = {
 	Csharp: a('csharp.svg'),
 	Xamarin: a('xamarin.svg'),
 	TypeScript: a('ts.png'),
+	Spring: a('spring.png'),
+	SQL: a('sql-server.png'),
 	VueJs: a('vue.png'),
 	ReactJs: a('react.svg'),
 	Dart: a('dart.png'),
@@ -70,7 +73,8 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	Resume: r('CV-Szymon Szafoni.pdf')
 };
 
 export default Assets;
