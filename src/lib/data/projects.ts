@@ -3,7 +3,7 @@ import { getSkills } from './skills';
 import type { Project } from '../types';
 
 export const items: Array<Project> = [
-	/* {
+	{
 		slug: 'slick-portfolio-angular',
 		color: '#5e95e3',
 		description:
@@ -18,7 +18,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('angular', 'ts', 'tailwind'),
 		type: 'Website Template'
-	}, */
+	}
 ];
 
 export const title = 'Projects';
