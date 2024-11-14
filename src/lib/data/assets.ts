@@ -3,7 +3,6 @@ import { theme } from '$lib/stores/theme';
 import { base } from '$app/paths';
 
 const gh = (file: string) => `${base}/logos/${file}`;
-const r = (file: string) => `${base}/resume/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
@@ -74,7 +73,6 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-	Resume: r('CV-Szymon Szafoni.pdf')
 };
 
 export default Assets;
